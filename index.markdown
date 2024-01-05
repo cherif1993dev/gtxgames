@@ -280,61 +280,7 @@ transform: translate3d(-51.5%, 0, 0) ;
 transform: translate3d(-51.5%, 0, 0) ;
 }
 }
-.player__button {
-all: unset ;
-z-index: 100 ;
-width: 2.5em ;
-height: 2.5em ;
-cursor: pointer ;
-}
-.playlist {
-transform: scale(0) ;
-transition: transform calc(var(--duration) / 2) ;
-}
-.slider.open-slider .playlist {
-transform: scale(1) ;
-transition: transform var(--cubic-play-list) ;
-}
-.player__button--absolute--nw {
-top: 5.5% ;
-left: 5.5% ;
-position: absolute ;
-}
-.player__button--absolute--center {
-top: 0 ;
-left: 0 ;
-right: 0 ;
-bottom: 0 ;
-margin: auto ;
-position: absolute ;
-}
-img[alt ="pause-icon"] {
-display: none ;
-}
-.player__controls {
-width: 77% ;
-gap: .5em 0 ;
-display: flex ;
-flex-wrap: wrap ;
-align-items: center ;
-will-change: contents ;
-align-content: center ;
-justify-content: center ;
-transition: transform var(--cubic-header) , width var(--cubic-header) ;
-}
-.player__controls.move {
-width: 88% ;
-transform: translate3d(-1.1em , calc(var(--parent-height) - 153%) , 0) ;
-}
-.player__context {
-margin: 0 ;
-width: 100% ;
-display: flex ;
-line-height: 1.8 ;
-flex-direction: column ;
-justify-content: center ;
-text-transform: capitalize ;
-}
+
 .slider__context {
 width: 56.28% ;
 cursor: pointer ;
