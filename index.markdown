@@ -293,65 +293,6 @@ animation: calc(var(--duration) / 2) var(--cubic-slider-context) ;
 
 
 
-// Get the playlist element
-const playlist = document.querySelector('.player__playlist');
-
-// Loop through the array of audio links and generate the HTML for each link
-audioLinks.forEach(link => {
-  // Create the list item element
-  const songItem = document.createElement('li');
-  songItem.classList.add('player__song');
-
-  // Create the image element
-  const img = document.createElement('img');
-  img.alt = 'cover';
-  img.classList.add('player__img', 'img');
-  img.src = link.imgSrc;
-
-  // Create the context paragraph element
-  const context = document.createElement('p');
-  context.classList.add('player__context');
-
-  // Create the song name element
-  const songName = document.createElement('b');
-  songName.classList.add('player__song-name');
-  songName.textContent = link.name;
-
-  // Create the title span element
-  const titleSpan = document.createElement('span');
-  titleSpan.classList.add('flex');
-
-  // Create the artist name element
-  const artistName = document.createElement('span');
-  artistName.classList.add('player__title');
-  artistName.textContent = link.artist;
-
-  // Create the song time element
-  const songTime = document.createElement('span');
-  songTime.classList.add('player__song-time');
-
-  // Append the artist name and song time elements to the title span
-  titleSpan.appendChild(artistName);
-  titleSpan.appendChild(songTime);
-
-  // Append the song name and title span elements to the context element
-  context.appendChild(songName);
-  context.appendChild(titleSpan);
-
-  // Create the audio element
-  const audio = document.createElement('audio');
-  audio.classList.add('audio');
-  audio.src = link.url;
-
-  // Append the image, context, and audio elements to the list item element
-  songItem.appendChild(img);
-  songItem.appendChild(context);
-  songItem.appendChild(audio);
-
-  // Append the list item element to the playlist
-  playlist.appendChild(songItem);
-});
-
   </script>
 <script>
 $(document).ready(function() {
