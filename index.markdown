@@ -432,58 +432,7 @@ sliderTitle.append(textWrap);
 function changeBgBody() {
 body.style.backgroundColor = bgBody[count];
 }
-function selectSong() {
-song = playerSongs[count];
-for (const item of playerSongs) {
-if (item != song) {
-item.pause();
-item.currentTime = 0;
-}
-}
-if (isPlay) song.play();
-}
-function run() {
-changeSliderContext();
-changeBgBody();
-selectSong();
-}
-function playSong() {
-if (song.paused) {
-song.play();
-playIcon.style.display = "none";
-pauseIcon.style.display = "block";
-}else{
-song.pause();
-isPlay = false;
-playIcon.style.display = "";
-pauseIcon.style.display = "";
-}
-}
-function progresUpdate() {
-const progresFilledWidth = (this.currentTime / this.duration) * 100 + "%";
-progresFilled.style.width = progresFilledWidth;
-if (isPlay && this.duration == this.currentTime) {
-next();
-}
-if (count == sliderContentLength && song.currentTime == song.duration) {
-playIcon.style.display = "block";
-pauseIcon.style.display = "";
-isPlay = false;
-}
-}
-function scurb(e) {
-// If we use e.offsetX, we have trouble setting the song time, when the mousemove is running
-const currentTime = ( (e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth ) * song.duration;
-song.currentTime = currentTime;
-}
-function durationSongs() {
-let min = parseInt(this.duration / 60);
-if (min < 10) min = "0" + min;
-let sec = parseInt(this.duration % 60);
-if (sec < 10) sec = "0" + sec;
-const playerSongTime = `${min}:${sec}`;
-this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
-}
+
 changeSliderContext();
 // add events
 sliderContext.addEventListener("click", openPlayer);
