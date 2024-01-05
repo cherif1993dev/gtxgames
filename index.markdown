@@ -138,24 +138,6 @@
   text-align: center;
 }
 
-.play-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFC107;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  margin-top: -90px;
-  margin-left: 90px;
-}
-
-.play-icon i {
-  font-size: 20px;
-}
-
 .app-container {
   position: relative;
         top: 40px;
@@ -186,7 +168,6 @@ position: relative;
 .app-icons {
   display: inline-block;
   white-space: nowrap;
-  align:center;
 
 }
 
@@ -206,14 +187,6 @@ position: relative;
 }
 
 
-body{
-margin: 0 ;
-display: flex ;
-user-select: none ;
-align-items: center ;
-justify-content: center ;
-background-color: #e5e7e9 ;
-}
 .img {
 width: 100% ;
 flex-shrink: 0;
