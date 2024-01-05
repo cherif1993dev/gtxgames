@@ -186,6 +186,7 @@ position: relative;
 .app-icons {
   display: inline-block;
   white-space: nowrap;
+  align:center;
 
 }
 
