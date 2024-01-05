@@ -271,35 +271,3 @@ $(document).ready(function() {
 
 
   </script>
-<script>
-
-"use strict";
-// add elemnts
-const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
-const body = document.body;
-
-function next(index) {
-count = index || count;
-if (count == sliderContentLength) {
-count = count;
-return;
-}
-left = (count + 1) * sliderWidth;
-left = Math.min(left, (sliderContentLength) * sliderWidth);
-count++;
-run();
-}
-function back(index) {
-count = index || count;
-if (count == 0) {
-count = count;
-return;
-}
-left = (count - 1) * sliderWidth;
-left = Math.max(0, left);
-count--;
-run();
-}
-
-
-</style>
