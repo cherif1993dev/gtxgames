@@ -441,41 +441,5 @@ playlistButton.addEventListener("click", closePlayer);
 nextButton.addEventListener("click", () => {
 next(0)
 });
-backButton.addEventListener("click", () => {
-back(0)
-});
-playButton.addEventListener("click", () => {
-isPlay = true;
-playSong();
-});
-playerSongs.forEach(song => {
-song.addEventListener("loadeddata" , durationSongs);
-song.addEventListener("timeupdate" , progresUpdate);
-});
-progres.addEventListener("pointerdown", (e) => {
-scurb(e);
-isMove = true;
-});
-document.addEventListener("pointermove", (e) => {
-if (isMove) {
-scurb(e);
-song.muted = true;
-}
-});
-document.addEventListener("pointerup", () => {
-isMove = false;
-song.muted = false;
-});
-playerPlayList.forEach((item, index) => {
-item.addEventListener("click", function() {
-if (index > count) {
-next(index - 1);
-return;
-}
-if (index < count) {
-back(index + 1);
-return;
-}
-});
-});
+
 </style>
