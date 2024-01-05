@@ -227,20 +227,6 @@ flex-shrink: 0;
 display: block ;
 object-fit: cover ;
 }
-.list {
-margin: 0 ;
-padding: 0 ;
-list-style-type: none ;
-}
-.flex {
-display: flex ;
-align-items: center ;
-justify-content: space-between ;
-}
-.uppercase{
-text-transform: uppercase ;
-}
-
 
   </script>
 <script>
