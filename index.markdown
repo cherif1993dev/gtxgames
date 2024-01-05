@@ -205,12 +205,6 @@ position: relative;
 }
 
 
-html *,
-html *::before,
-html *::after {
-box-sizing: inherit ;
-scrollbar-width: none ;
-}
 body{
 margin: 0 ;
 display: flex ;
@@ -218,8 +212,6 @@ user-select: none ;
 align-items: center ;
 justify-content: center ;
 background-color: #e5e7e9 ;
--webkit-tap-highlight-color: transparent ;
-transition: background-color var(--cubic-slider) ;
 }
 .img {
 width: 100% ;
