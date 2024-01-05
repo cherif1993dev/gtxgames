@@ -281,18 +281,6 @@ transform: translate3d(-51.5%, 0, 0) ;
 }
 }
 
-.slider__context {
-width: 56.28% ;
-cursor: pointer ;
-text-align: center ;
-padding-bottom: .2em ;
-will-change: contents ;
-transition: width var(--cubic-header) ;
-animation: calc(var(--duration) / 2) var(--cubic-slider-context) ;
-}
-
-
-
   </script>
 <script>
 $(document).ready(function() {
